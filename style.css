@@ -19,6 +19,9 @@ ul li a{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    
+
 }
 
 header{
@@ -88,6 +91,7 @@ header .menu{
     align-items: center;
     justify-content: space-between;
 }
+
 
 #quem-somos h2{
     font-size: 32px;
@@ -191,7 +195,7 @@ header .menu{
     border: 5px solid #122A57;
     margin-right: 20px;
     padding: 10px;
-    max-width: 240px;
+    
 }
 
 .item-planos .btn{
@@ -239,8 +243,67 @@ header .menu{
 }
 
 
+footer{
+    background-color: #122A57;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
 
+}
 
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/*Tornando responsivo (mobile) */
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .lista-servicos{
+        flex-direction: column;
+    }
+
+    .item-servico img{
+        width: 50px;
+        margin: auto;
+    }
+    
+    .lista-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .lista-planos .item-planos{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
 
 
 
